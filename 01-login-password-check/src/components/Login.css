@@ -1,0 +1,133 @@
+/* Login Page CSS Styles*/
+.login-p {
+  height: 100vh;
+  background-image: url(../imgs/login-page.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Profile Password Section */
+.profile-psw {
+  max-width: 310px;
+  width: 100%;
+  margin: auto;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  box-sizing: border-box;
+}
+
+.profile-psw > section {
+  width: inherit;
+  height: 66px;
+  margin-bottom: 7px;
+  padding: 3px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.profile-psw > section:hover {
+  border: 1px solid #45bfda;
+}
+
+.profile-psw section > i {
+  width: 55px;
+  height: 55px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #36b0c9;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.profile-psw section > span {
+  font-size: 1rem;
+}
+
+.ent-psw {
+  max-width: 280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.profile-psw.hidden,
+.ent-psw.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ent-psw > i {
+  position: absolute;
+  top: 81%;
+  left: -15%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c0c0c0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ent-psw > i:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ent-psw > section {
+  position: relative;
+}
+
+.ent-psw > section > input {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: inset 0 0 0 1px #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.ent-psw > section > input:focus {
+  box-shadow: inset 0 0 0 2px #ea4f06;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ent-psw > section > input::placeholder {
+  color: #fff;
+}
+
+.ent-psw > section > div {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+/* Ubuntu Footer Logo */
+
+.ubuntu-logo {
+  max-width: 200px;
+  margin: 30px auto;
+  color: #fff;
+}
+
+.ubuntu-logo > img {
+  width: 100%;
+}
